@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ApiClient\BinanceFutures\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Messaging\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Binance.Net" Version="5.0.4" />
+    <PackageReference Include="EntityFramework" Version="6.4.0" />
+    <PackageReference Include="System.Composition.AttributedModel" Version="1.4.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeepCoveCapital.Core\DeepCoveCapital.Core.csproj" />
+    <ProjectReference Include="..\DeepCoveCapital.Infrastructure\DeepCoveCapital.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

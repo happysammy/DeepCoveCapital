@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeepCoveCapital.Core\DeepCoveCapital.Core.csproj" />
+    <ProjectReference Include="..\DeepCoveCapital.Infrastructure\DeepCoveCapital.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
