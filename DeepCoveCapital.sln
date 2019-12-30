@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCoveCapital.WebApp", "DeepCoveCapital\DeepCoveCapital.WebApp.csproj", "{F4467628-DC82-4BA7-ADF6-49F22404F88A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCoveCapital.Exchanges", "DeepCoveCapital.Console\DeepCoveCapital.Exchanges.csproj", "{94AC996B-2CB2-487F-BF56-BDC729DE056D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCoveCapital.Data", "DeepCoveCapital.Data\DeepCoveCapital.Data.csproj", "{1D6C7725-9AD2-4CA5-95B7-DA56DCC5C602}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCoveCapital.Core", "DeepCoveCapital.Core\DeepCoveCapital.Core.csproj", "{32856EC9-B5AE-4695-9422-149880F83830}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCoveCapital.Infrastructure", "DeepCoveCapital.Infrastructure\DeepCoveCapital.Infrastructure.csproj", "{9DDF35F6-A561-4D23-A907-080A9C26BB56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCoveCapital.Infrastructure", "DeepCoveCapital.Infrastructure\DeepCoveCapital.Infrastructure.csproj", "{9DDF35F6-A561-4D23-A907-080A9C26BB56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCoveCapital.Strategies", "DeepCoveCapital.Strategies\DeepCoveCapital.Strategies.csproj", "{05D301F0-FD00-4600-9162-53E26D02CAAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCoveCapital.Strategies", "DeepCoveCapital.Strategies\DeepCoveCapital.Strategies.csproj", "{05D301F0-FD00-4600-9162-53E26D02CAAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCoveCapital.TradeExecutions", "DeepCoveCapital.TradeExecutions\DeepCoveCapital.TradeExecutions.csproj", "{727E0659-99E5-4B8D-A887-6FFDE0A94D9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCoveCapital.TradeExecutions", "DeepCoveCapital.TradeExecutions\DeepCoveCapital.TradeExecutions.csproj", "{727E0659-99E5-4B8D-A887-6FFDE0A94D9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCoveCapital.ConsoleApp", "DeepCoveCapital.ConsoleApp\DeepCoveCapital.ConsoleApp.csproj", "{7D0F07D0-03FF-4393-8071-18EB829B172D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCoveCapital.ConsoleApp", "DeepCoveCapital.ConsoleApp\DeepCoveCapital.ConsoleApp.csproj", "{7D0F07D0-03FF-4393-8071-18EB829B172D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCoveCapital.Exchanges", "DeepCoveCapital.Exchanges\DeepCoveCapital.Exchanges.csproj", "{A0102136-E76B-4EE6-AA22-80DBB6549784}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCoveCapital.WebApp", "DeepCoveCapital.WebApp\DeepCoveCapital.WebApp.csproj", "{4642E4F4-E162-4CAB-A529-2FE0946DC1A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4467628-DC82-4BA7-ADF6-49F22404F88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4467628-DC82-4BA7-ADF6-49F22404F88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4467628-DC82-4BA7-ADF6-49F22404F88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4467628-DC82-4BA7-ADF6-49F22404F88A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{94AC996B-2CB2-487F-BF56-BDC729DE056D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94AC996B-2CB2-487F-BF56-BDC729DE056D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94AC996B-2CB2-487F-BF56-BDC729DE056D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94AC996B-2CB2-487F-BF56-BDC729DE056D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1D6C7725-9AD2-4CA5-95B7-DA56DCC5C602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D6C7725-9AD2-4CA5-95B7-DA56DCC5C602}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D6C7725-9AD2-4CA5-95B7-DA56DCC5C602}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +49,14 @@ Global
 		{7D0F07D0-03FF-4393-8071-18EB829B172D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D0F07D0-03FF-4393-8071-18EB829B172D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D0F07D0-03FF-4393-8071-18EB829B172D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0102136-E76B-4EE6-AA22-80DBB6549784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0102136-E76B-4EE6-AA22-80DBB6549784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0102136-E76B-4EE6-AA22-80DBB6549784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0102136-E76B-4EE6-AA22-80DBB6549784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4642E4F4-E162-4CAB-A529-2FE0946DC1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4642E4F4-E162-4CAB-A529-2FE0946DC1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4642E4F4-E162-4CAB-A529-2FE0946DC1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4642E4F4-E162-4CAB-A529-2FE0946DC1A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

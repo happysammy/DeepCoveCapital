@@ -13,7 +13,7 @@ namespace DeepCoveCapital.Exchanges
         void InitializeAPI();
         List<Instrument> InitializeInstruments();
         void InitializeWebsocket();
-        void GetAPIValidity();
+        decimal GetAccountBalanceInUSD();
         #endregion
 
 
@@ -41,6 +41,16 @@ namespace DeepCoveCapital.Exchanges
 
         #endregion
 
+        #region Helpers
+        Instrument ConvertInstrument();
+        Order ConvertOrder();
+        Position ConvertPositions();
+        OrderDirection ConvertOrderDirection();
+        OrderType ConvertOrderType();
+        TimeInForce ConvertTimeInForce();
+        
+
+        #endregion
 
         #region ErrorProcessing
         void HandleErrors();

@@ -6,8 +6,23 @@ namespace DeepCoveCapital.Core
 {
     public class Instrument
     {
-        public string Symbol;
-        public ExchangeName Exchange;
-        public decimal TickSize;
+        public Instrument(string symbol, decimal tickSize, ExchangeName exchange, bool active = false)
+        {
+            Symbol = symbol;
+            Exchange = exchange;
+            TickSize = tickSize;
+            Active = active;
+        }
+        public string Symbol { get; }
+        public ExchangeName Exchange { get; }
+        public decimal TickSize { get; }
+        public decimal DecimalPlacesInTickSize
+        {
+            get
+            {//TODO edit for decimal places
+                return TickSize;
+            }
+        }
+        public bool Active { get; set; }
     }
 }

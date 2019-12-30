@@ -5,16 +5,29 @@ using System.Text;
 namespace DeepCoveCapital.Core
 {
     public class Order
-    {
+    {//TODO create open order items - maybe separate into placed order and open order
         public Order(string symbol, ExchangeName exchange, OrderDirection direction, decimal quantity, decimal price, OrderType type, TimeInForce timeInForce)
         {
-            this.Symbol = symbol;
-            this.Exchange = exchange;
-            this.Direction = direction;
-            this.Quantity = quantity;
-            this.Price = price;
-            this.Type = type;
-            this.TimeInForce = timeInForce;
+            Symbol = symbol;
+            Exchange = exchange;
+            Direction = direction;
+            Quantity = quantity;
+            Price = price;
+            Type = type;
+            TimeInForce = timeInForce;
+        }
+
+        public Order(string symbol, ExchangeName exchange, OrderDirection direction, decimal quantity, decimal price, OrderType type, TimeInForce timeInForce, decimal stopPrice, string clientID)
+        {
+            Symbol = symbol;
+            Exchange = exchange;
+            Direction = direction;
+            Quantity = quantity;
+            Price = price;
+            Type = type;
+            TimeInForce = timeInForce;
+            StopPrice = stopPrice;
+            ClientID = clientID;
         }
         public int OrderID;
         public string Symbol;
@@ -25,6 +38,7 @@ namespace DeepCoveCapital.Core
         public OrderType Type;
         public TimeInForce TimeInForce;
         public decimal? StopPrice = null;
+        public string ClientID = "";
     }
 
     public enum OrderDirection
